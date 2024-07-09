@@ -4,8 +4,9 @@ import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 import { Readable } from "stream";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 
+const resend = new Resend('re_123456789');
+resend.apiKeys.create({ name: 'Production' });
 export async function POST(req: NextRequest) {
   const formData = await req.formData();
   const email = formData.get("email") as string;
