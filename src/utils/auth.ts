@@ -4,6 +4,8 @@ import User from "@/models/userModel";
 import DiscordProvider from "next-auth/providers/discord";
 import bcrypt from "bcryptjs";
 import { connectDb } from "@/utils/connectDb";
+import { Resend } from 'resend';
+
 
 const scopes = ["identify"].join(" ");
 
@@ -71,6 +73,10 @@ export const authOptions: NextAuthOptions = {
   }
 };
 
+
+const resend = new Resend('re_123456789');
+
+resend.apiKeys.create({ name: 'Production' });
 
 export const handler = NextAuth(authOptions);
 export { handler as GET, handler as POST };

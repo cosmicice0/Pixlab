@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { FaDiscord } from "react-icons/fa";
 import { z } from "zod";
+import { Resend } from 'resend';
 interface errorProps {
   email:string,
 password: string;
