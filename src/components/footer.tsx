@@ -12,7 +12,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="w-full md:w-1/3 mb-6 md:mb-0 flex justify-center items-center flex-col ">
+        {/* <div className="w-full md:w-1/3 mb-6 md:mb-0 flex justify-center items-center flex-col ">
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
           <ul className=" flex flex-col  justify-center items-center flex-wrap">
             <li>
@@ -36,22 +36,22 @@ const Footer = () => {
               </Link>
             </li>
           </ul>
-        </div>
+        </div> */}
 
         <div className="w-full md:w-1/3 justify-center items-center flex flex-col">
           <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
           <p className="mb-2">
             Email:{" "}
             <a href="mailto:info@rigalem.com" className="hover:underline">
-              info@rigalem.com
+              sales@pixlab.com
             </a>
           </p>
-          <p className="mb-2">
+          {/* <p className="mb-2">
             Phone:{" "}
             <a href="tel:+1234567890" className="hover:underline">
               +123 456 7890
             </a>
-          </p>
+          </p> */}
           <div className="flex space-x-4 mt-4">
             <a
               href="https://www.facebook.com"
@@ -89,7 +89,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container mx-auto px-6 md:px-12 mt-8 text-center">
-        <p>&copy; {new Date().getFullYear()} Rigalem. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Pixlab. All rights reserved.</p>
       </div>
     </footer>
   );

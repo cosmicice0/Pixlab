@@ -27,7 +27,7 @@ const HeroBanner = () => {
               <span className="text-red-600">Solutions</span>.
             </h1>
             <p className="mt-4 text-lg">
-            Pixlab is a dynamic website development agency specializing in creating visually stunning and highly functional websites.
+            {/* Pixlab is a dynamic website development agency specializing in creating visually stunning and highly functional websites. */}
             </p>
           </div>
         </div>

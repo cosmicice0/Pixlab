@@ -101,7 +101,7 @@ const SignupForm = () => {
       <div className="bg-[#333] p-8 w-full max-w-md">
         <div className="flex flex-col items-center mb-6">
           {/* <Image src="/path/to/logo.png" alt="Logo" className="h-12 mb-4" /> */}
-          <h1 className="text-2xl font-bold">Sign Up for Pixlab</h1>
+          <h1 className="text-2xl font-bold">Create Pixlab Account.</h1>
 
           <p className="mt-2 text-gray-400 text-center">
             Create a Pixlab account to see active orders.
@@ -186,10 +186,10 @@ const SignupForm = () => {
         </form>
       </div>
       <footer className="mt-6 text-gray-400 flex w-full justify-center items-center">
-        <p>&copy; Rollerite 2024 | All Rights Reserved</p>
-        <Link href="/privacy-policy" className="ml-2 underline cursor-pointer">
+        <p>&copy; Pixlab 2024 | All Rights Reserved</p>
+        {/* <Link href="/privacy-policy" className="ml-2 underline cursor-pointer">
           Privacy Policy
-        </Link>
+        </Link> */}
       </footer>
     </div>
   );
