@@ -74,7 +74,7 @@ export const authOptions: NextAuthOptions = {
 };
 
 
-const resend = new Resend('re_123456789');
+const resend = new Resend('process.env.RESEND_API_KEY');
 
 resend.apiKeys.create({ name: 'Production' });
 
